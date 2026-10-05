@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "Hugo Pinto · Full Stack Developer",
+    "description": "Full Stack Developer based in Rio de Janeiro. React, Ruby on Rails, PostgreSQL, PL/SQL, Docker and Linux/Windows Server infrastructure."
+  },
+  "nav": {
+    "about": "About",
+    "stack": "Stack",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact",
+    "switchLanguage": "Switch language to Portuguese",
+    "toggleTheme": "Toggle light/dark theme"
+  },
+  "hero": {
+    "available": "Open to new opportunities",
+    "greeting": "Hi, I'm",
+    "role": "Full Stack Developer",
+    "tagline": "I build web applications from database to deploy: React interfaces, Ruby on Rails back ends, data in PostgreSQL and PL/SQL, all packaged with Docker and served by Nginx.",
+    "ctaProjects": "See projects",
+    "ctaContact": "Get in touch",
+    "ctaCv": "Download CV"
+  },
+  "about": {
+    "title": "About me",
+    "paragraphs": [
+      "I'm a full stack developer based in Rio de Janeiro with a B.Sc. in Computer Science and over 5 years of experience in tech. I like to understand the whole problem: from database modeling to the experience of the person using the screen.",
+      "Today I'm the technical lead for a system at Inetum: I build with React and Ruby on Rails, write PL/SQL when business rules live in the database, migrate legacy code to React and run production servers with Docker, Nginx, Red Hat and Windows Server.",
+      "Outside of work I turn real problems into projects, like a platform that grades multiple-choice answer sheets from a photo."
+    ],
+    "facts": [
+      { "label": "Based in", "value": "Rio de Janeiro, Brazil" },
+      { "label": "Experience", "value": "5+ years" },
+      { "label": "Portuguese", "value": "Native" },
+      { "label": "English", "value": "Intermediate" }
+    ]
+  },
+  "stack": {
+    "title": "Stack",
+    "subtitle": "Tools I use every day and others I've worked with.",
+    "groups": {
+      "frontend": "Front end",
+      "backend": "Back end",
+      "data": "Databases",
+      "infra": "Infra & DevOps"
+    }
+  },
+  "projects": {
+    "title": "Featured projects",
+    "subtitle": "A few projects that show how I think and build software.",
+    "problem": "Problem",
+    "solution": "Solution",
+    "highlights": "Technical highlights",
+    "code": "Code",
+    "live": "Live demo"
+  },
+  "repos": {
+    "title": "More on GitHub",
+    "subtitle": "Public repositories, updated automatically.",
+    "updated": "Updated",
+    "viewAll": "See full profile"
+  },
+  "experience": {
+    "title": "Experience",
+    "present": "Present",
+    "education": "Education",
+    "course": "Course"
+  },
+  "contact": {
+    "title": "Let's talk",
+    "subtitle": "I'm open to new opportunities, freelance work and good conversations about tech.",
+    "email": "Send an e-mail"
+  },
+  "footer": {
+    "built": "Built with Next.js, Tailwind CSS and TypeScript. Hosted on Vercel."
+  }
+}

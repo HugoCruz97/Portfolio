@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "Hugo Pinto · Desenvolvedor Full Stack",
+    "description": "Desenvolvedor Full Stack no Rio de Janeiro. React, Ruby on Rails, PostgreSQL, PL/SQL, Docker e infraestrutura Linux/Windows Server."
+  },
+  "nav": {
+    "about": "Sobre",
+    "stack": "Stack",
+    "projects": "Projetos",
+    "experience": "Experiência",
+    "contact": "Contato",
+    "switchLanguage": "Mudar idioma para inglês",
+    "toggleTheme": "Alternar tema claro/escuro"
+  },
+  "hero": {
+    "available": "Aberto a novas oportunidades",
+    "greeting": "Olá, eu sou",
+    "role": "Desenvolvedor Full Stack",
+    "tagline": "Construo aplicações web do banco de dados ao deploy: interfaces em React, back-ends em Ruby on Rails, dados em PostgreSQL e PL/SQL, tudo empacotado em Docker e servido com Nginx.",
+    "ctaProjects": "Ver projetos",
+    "ctaContact": "Fale comigo",
+    "ctaCv": "Baixar CV"
+  },
+  "about": {
+    "title": "Sobre mim",
+    "paragraphs": [
+      "Sou desenvolvedor full stack no Rio de Janeiro, formado em Ciência da Computação, com mais de 5 anos de experiência em tecnologia. Gosto de entender o problema inteiro: da modelagem do banco à experiência de quem usa a tela.",
+      "Hoje sou responsável técnico por um sistema na Inetum: desenvolvo em React e Ruby on Rails, escrevo PL/SQL quando a regra de negócio mora no banco, migro código legado para React e cuido dos servidores de produção com Docker, Nginx, Red Hat e Windows Server.",
+      "Fora do trabalho, transformo problemas reais em projetos, como uma plataforma que corrige cartões-resposta de simulados por foto."
+    ],
+    "facts": [
+      { "label": "Base", "value": "Rio de Janeiro, Brasil" },
+      { "label": "Experiência", "value": "5+ anos" },
+      { "label": "Português", "value": "Nativo" },
+      { "label": "Inglês", "value": "Intermediário" }
+    ]
+  },
+  "stack": {
+    "title": "Stack",
+    "subtitle": "Ferramentas que uso no dia a dia e outras com as quais já trabalhei.",
+    "groups": {
+      "frontend": "Front-end",
+      "backend": "Back-end",
+      "data": "Banco de dados",
+      "infra": "Infra & DevOps"
+    }
+  },
+  "projects": {
+    "title": "Projetos em destaque",
+    "subtitle": "Alguns projetos que mostram como penso e construo software.",
+    "problem": "Problema",
+    "solution": "Solução",
+    "highlights": "Destaques técnicos",
+    "code": "Código",
+    "live": "Ver online"
+  },
+  "repos": {
+    "title": "Mais no GitHub",
+    "subtitle": "Repositórios públicos, atualizados automaticamente.",
+    "updated": "Atualizado em",
+    "viewAll": "Ver perfil completo"
+  },
+  "experience": {
+    "title": "Experiência",
+    "present": "Atual",
+    "education": "Formação",
+    "course": "Curso"
+  },
+  "contact": {
+    "title": "Vamos conversar?",
+    "subtitle": "Estou aberto a novas oportunidades, freelas e boas conversas sobre tecnologia.",
+    "email": "Enviar e-mail"
+  },
+  "footer": {
+    "built": "Feito com Next.js, Tailwind CSS e TypeScript. Hospedado na Vercel."
+  }
+}

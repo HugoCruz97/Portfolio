@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfólio · Hugo Pinto
 
-## Getting Started
+Site pessoal em PT/EN feito com Next.js 16 (App Router), TypeScript, Tailwind CSS 4 e Motion.
 
-First, run the development server:
+## Rodando localmente
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse http://localhost:3000. O `src/proxy.ts` redireciona para `/pt` ou `/en` conforme o idioma do navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Onde editar o conteúdo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| O quê | Arquivo |
+|---|---|
+| Textos da interface (PT/EN) | `src/i18n/dictionaries/pt.json`, `en.json` |
+| Dados pessoais, links, stack | `src/content/profile.ts` |
+| Projetos em destaque (cases) | `src/content/projects.ts` |
+| Experiência profissional | `src/content/experience.ts` |
 
-## Learn More
+A seção "Mais no GitHub" busca seus repositórios públicos automaticamente (revalidação diária). Os que já aparecem como destaque ficam de fora.
 
-To learn more about Next.js, take a look at the following resources:
+## Deploy na Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Suba este repositório para o GitHub.
+2. Em [vercel.com/new](https://vercel.com/new), importe o repositório. Não é preciso configurar nada.
+3. Opcional: crie a variável de ambiente `GITHUB_TOKEN` (um token sem permissões extras) para não esbarrar no limite da API do GitHub.
+4. Depois do primeiro deploy, atualize `siteUrl` em `src/content/profile.ts`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Cada push na branch `main` gera um novo deploy, e cada pull request ganha uma URL de preview.
