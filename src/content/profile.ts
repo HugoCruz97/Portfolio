@@ -8,7 +8,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/hugo-cruz-souto/",
   email: "hugopintoc@hotmail.com",
   cvUrl: "/cv-hugo-pinto.pdf",
-  siteUrl: "https://hugopinto.vercel.app", // TODO: update after the first Vercel deploy
+  siteUrl: "https://hugosouto.vercel.app",
 };
 
 export const stack = {
