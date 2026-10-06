@@ -15,35 +15,35 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "metaverso-simulados",
-    name: "Metaverso Simulados",
+    slug: "corrige",
+    name: "Corrige",
     year: "2026",
     summary: {
       pt: "Plataforma para criar simulados escolares e corrigir cartões-resposta automaticamente a partir de uma foto.",
       en: "Platform to build school mock exams and automatically grade answer sheets from a photo.",
     },
     problem: {
-      pt: "Corrigir cartões-resposta de turmas inteiras à mão é lento e fácil de errar, e as ferramentas prontas são caras ou engessadas.",
-      en: "Grading answer sheets for whole classes by hand is slow and error-prone, and off-the-shelf tools are expensive or rigid.",
+      pt: "Corrigir cartões-resposta de turmas inteiras à mão é lento e fácil de errar, e as ferramentas prontas são caras ou engessadas. Feito para uma professora, que já o usa com cartões reais.",
+      en: "Grading answer sheets for whole classes by hand is slow and error-prone, and off-the-shelf tools are expensive or rigid. Built for a teacher who already uses it with real answer sheets.",
     },
     solution: {
-      pt: "Uma aplicação Rails com Hotwire para montar simulados e cadastrar alunos, mais um serviço Python de leitura óptica (OMR) que lê o cartão fotografado e devolve as respostas.",
-      en: "A Rails + Hotwire app to build exams and manage students, plus a Python optical mark recognition (OMR) service that reads a photographed sheet and returns the answers.",
+      pt: "Uma aplicação Rails com Hotwire para montar simulados, cadastrar turmas e gerar relatórios, mais um serviço Python de leitura óptica (OMR) que encontra a grade de respostas na foto e devolve as marcações.",
+      en: "A Rails + Hotwire app to build exams, manage classes and generate reports, plus a Python optical mark recognition (OMR) service that finds the answer grid in the photo and returns the marks.",
     },
     highlights: {
       pt: [
-        "Arquitetura com três containers (Rails, PostgreSQL 17 e OMR em Python) orquestrados com Docker Compose",
-        "Interface reativa sem SPA, usando Turbo e Stimulus",
-        "Hot reload com Hotwire Spark para um ciclo de desenvolvimento rápido",
+        "Leitura óptica com OpenCV sem template fixo: detecta a grade na foto e valida contra o número de questões e alternativas do simulado",
+        "Envio de várias fotos de uma vez, leitura em segundo plano e atualização da tela em tempo real com Turbo Streams",
+        "Gabaritos de inglês e espanhol, provas adaptadas, importação de alunos por Excel e relatório de notas da turma em Excel e PDF",
       ],
       en: [
-        "Three-container architecture (Rails, PostgreSQL 17 and a Python OMR service) orchestrated with Docker Compose",
-        "Reactive UI without a SPA, using Turbo and Stimulus",
-        "Hot reload with Hotwire Spark for a fast development loop",
+        "Template-free optical reading with OpenCV: it finds the grid in the photo and checks it against the exam's question and option counts",
+        "Bulk photo upload, background processing and live screen updates with Turbo Streams",
+        "English and Spanish answer keys, adapted tests, student import from Excel and class grade reports in Excel and PDF",
       ],
     },
-    stack: ["Ruby on Rails 8.1", "Hotwire", "Tailwind CSS", "PostgreSQL 17", "Python", "Docker"],
-    repo: "https://github.com/HugoCruz97/metaverso-simulados",
+    stack: ["Ruby on Rails 8.1", "Hotwire", "Tailwind CSS", "PostgreSQL 17", "Python", "OpenCV", "FastAPI", "Docker"],
+    repo: "https://github.com/HugoCruz97/gabarito",
   },
   {
     slug: "biblioteca",
