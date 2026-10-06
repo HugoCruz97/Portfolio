@@ -46,6 +46,37 @@ export const projects: Project[] = [
     repo: "https://github.com/HugoCruz97/metaverso-simulados",
   },
   {
+    slug: "biblioteca",
+    name: "Biblioteca",
+    year: "2026",
+    summary: {
+      pt: "Sistema full stack de gestão de biblioteca escolar: acervo, alunos, empréstimos e devoluções com controle de atraso.",
+      en: "Full stack school library system: collection, students, loans and returns with late tracking.",
+    },
+    problem: {
+      pt: "Controlar o acervo e os empréstimos de uma biblioteca escolar sem planilhas soltas, sabendo na hora o que está disponível e o que está atrasado.",
+      en: "Track a school library's collection and loans without scattered spreadsheets, knowing at a glance what's available and what's overdue.",
+    },
+    solution: {
+      pt: "Monorepo com uma API REST em Rails 8.1 e uma SPA em React + Vite. A API concentra as regras de negócio; o front-end mostra os erros de validação direto no campo do formulário.",
+      en: "A monorepo with a Rails 8.1 REST API and a React + Vite SPA. The API owns the business rules; the front end shows validation errors right on the matching form field.",
+    },
+    highlights: {
+      pt: [
+        "Disponibilidade calculada a partir dos empréstimos em aberto, com lock de linha para evitar emprestar o último exemplar duas vezes",
+        "41 testes (Minitest e Vitest) e CI separado por app com RuboCop, Brakeman, bundler-audit, Oxlint e checagem de tipos",
+        "Ambiente completo com um comando (docker compose up): PostgreSQL, API e front-end com hot reload",
+      ],
+      en: [
+        "Availability computed from open loans, with a row lock so the last copy can't be lent twice",
+        "41 tests (Minitest and Vitest) and per-app CI with RuboCop, Brakeman, bundler-audit, Oxlint and type checking",
+        "Whole environment in one command (docker compose up): PostgreSQL, API and front end with hot reload",
+      ],
+    },
+    stack: ["Ruby on Rails 8.1", "PostgreSQL", "React", "TypeScript", "Vite", "TanStack Query", "Docker", "GitHub Actions"],
+    repo: "https://github.com/HugoCruz97/biblioteca",
+  },
+  {
     slug: "unifood",
     name: "Unifood",
     year: "2023",
@@ -107,36 +138,5 @@ export const projects: Project[] = [
     stack: ["NestJS", "Prisma", "React", "TypeScript", "shadcn/ui", "Vercel"],
     repo: "https://github.com/HugoCruz97/teste-txai",
     live: "https://teste-txai.vercel.app",
-  },
-  {
-    slug: "library-backend",
-    name: "Library API",
-    year: "2025",
-    summary: {
-      pt: "API Rails para gestão de biblioteca: livros, alunos e empréstimos.",
-      en: "Rails API for library management: books, students and loans.",
-    },
-    problem: {
-      pt: "Controlar o acervo e os empréstimos de uma biblioteca escolar sem planilhas soltas.",
-      en: "Track a school library's collection and loans without scattered spreadsheets.",
-    },
-    solution: {
-      pt: "API REST em Rails 8.1 com pipeline de CI, análise de segurança e deploy em container pronto com Kamal.",
-      en: "A Rails 8.1 REST API with a CI pipeline, security scanning and container deploys set up with Kamal.",
-    },
-    highlights: {
-      pt: [
-        "CI no GitHub Actions com RuboCop, Brakeman e bundler-audit",
-        "Dockerfile de produção e configuração de deploy com Kamal",
-        "Solid Queue e Solid Cache, sem depender de Redis",
-      ],
-      en: [
-        "GitHub Actions CI with RuboCop, Brakeman and bundler-audit",
-        "Production Dockerfile and deploy configuration with Kamal",
-        "Solid Queue and Solid Cache, no Redis required",
-      ],
-    },
-    stack: ["Ruby on Rails 8.1", "PostgreSQL", "Docker", "Kamal", "GitHub Actions"],
-    repo: "https://github.com/HugoCruz97/library-backend",
   },
 ];
